@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.20em;
+}
+
+
+header{
+    
+    background-color: grey;
+    
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-evenly;
+    
+    width: 100%;
+    
+    
+}
+
+header .container #tarea {
+    padding: 10px;
+    height: auto;
+    font-weight: bold;
+    margin-left: 0px;
+    
+    
+    
+    
+}
+
+header .container #prioridad{
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    
+
+}
+
+
+header .container #botonGuardar input{
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+
+header .container .hamburguesaMenu {
+    float: right;
+    width: 2em;
+    cursor: pointer;
+}
+
+header .container .hamburguesaMenu div{
+    border-top: 2px solid rgb(252, 250, 250);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+

@@ -11,12 +11,49 @@
 
 <body>
 
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div>
+                    <input type="text" id="tarea" placeholder="Introduce una tarea">
+                </div>
+
+
+                <div>
+                    <select id="prioridad">
+                        <option value="">Selecciona una prioridad</option>
+                        <option value="urgente">Mensual</option>
+                        <option value="semanal">semanal</option>
+                        <option value="diaria">Diario</option>
+                    </select>
+
+                </div>
+
+                <div id="botonGuardar">
+                    <div>
+                        <input type="submit" value="Guardar" id="btnSave">
+                    </div>
+                </div>
+                <div class="hamburguesaMenu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+
+        <main></main>
 
 
 
+        <footer></footer>
 
 
-    <script src="js/main.js"></script>
+    </div>
+
+
+    <script src="js/controller.js"></script>
+    <script src="js/view.js"></script>
 </body>
 
 </html>
