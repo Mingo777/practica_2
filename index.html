@@ -1,81 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Practica 2 : Aplicación Agenda</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+	<title>Lista de Tareas</title>
 </head>
 
 <body>
+	<header>
+		<div class="wrapper">
+			<div id="home" class="overheader">
+				<div class="logo ">
+					<i class="fa-brands fa-bilibili"></i>
+				</div>
+				<h1>AppGenda Personal</h1>
+				<div class="burguer">
+					<i class="fas fa-align-justify"></i>
+				</div>
+			</div>
 
-    <div id="wrapper">
-        <header>
-            <div class="container">
-                <div>
-                    <input type="text" id="tarea" placeholder="Introduce una tarea">
-                </div>
+			<nav class="navbar">
+				<ul>
+					<li class="nav1"><a id="active" href="#home">HOME</a></li>
+					<li class="nav2"><a href="#">TAREAS </a></li>
 
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="principal">
+		<div class="wrap">
+			<form class="formulario" action="">
+				<input type="text" id="tareaInput" placeholder="Agrega tu tarea">
+				<input type="button" class="boton" id="btn-agregar" value="Agregar Tarea">
+			</form>
+		</div>
+	</div>
 
-                <div>
-                    <select id="prioridad">
-                        <option value="">Selecciona una prioridad</option>
-                        <option value="urgente">Mensual</option>
-                        <option value="semanal">semanal</option>
-                        <option value="diaria">Diario</option>
-                    </select>
-
-                </div>
-
-                <div id="botonGuardar">
-                    <div>
-                        <input type="submit" value="Guardar" id="btnSave">
-                    </div>
-                </div>
-                <div class="hamburguesaMenu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </header>
-
-        <main>
-            <div class="container">
-
-                <div>
-                    <select id="prioridad">
-                        <option value="">Selecciona una prioridad</option>
-                        <option value="urgente">Mensual</option>
-                        <option value="semanal">semanal</option>
-                        <option value="diaria">Diario</option>
-                    </select>
-                </div>
-
-                <div>
-                    <input type="text" id="tarea" placeholder="Introduce una tarea">
-                </div>
-
-
-
-
-
-            </div>
-
-        </main>
-
-
-
-        <footer></footer>
-
-
-    </div>
-
-
-    <script src="js/controller.js"></script>
-    <script src="js/view.js"></script>
+	<div class="tareas">
+		<div class="wrap">
+			<ul class="lista" id="lista">
+				<li><a href="#">1 Lorem ipsum dolor sit amet.</a></li>
+				<li><a href="#">2 Lorem ipsum dolor sit amet.</a></li>
+				<li><a href="#">3 Lorem ipsum dolor sit amet.</a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

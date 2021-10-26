@@ -1,0 +1,156 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Oswald:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+	:root {
+		--fuenteprincipal: 'Open Sans', sans-serif;
+		--fuentesecundaria: 'Oswald', sans-serif;
+		--colorprincipal: #f7ecec3d;
+		--colorsecundario: #c28c27fb;
+		--fontsize: 1.25em;
+		--margingrid: 10px;
+		--anchomaximo: 1100px;
+	}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+body {
+	
+	font-family: var(--fuenteprincipal);
+	font-size: var(var(--fontsize));
+}
+/* header */
+
+
+header{
+    background-color:var(--colorprincipal);
+    font-weight: bold;
+    padding: 5px;
+}
+
+header div nav ul {
+    font-family: var(--fuenteprincipal);
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+header div nav ul li a{    
+    text-decoration: none;
+    color: black;
+    
+}
+
+header div>div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 150%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+header div >div div{
+    cursor: pointer;
+}
+
+header div >div div:hover{
+    color: var(--colorsecundario);
+}
+
+header div nav {
+    margin-bottom: 10px;
+}
+
+header div nav ul li:hover a{    
+    color: var(--colorsecundario);
+    transition: 1s;
+}
+
+
+/* fin de header */
+
+
+
+body {
+	background: #FAFAFA;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.wrap {
+	margin: auto;
+	max-width: 800px;
+	width: 90%;
+}
+
+.principal {
+	background-image: url('/images/agenda_02-1618969656.webp');
+	
+	color: #fff;
+	padding: 50px 0;
+	width: 100%;
+}
+
+.principal .formulario {
+	color: #212121;
+	text-align: center;
+}
+
+.principal .formulario input[type=text] {
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+	color: black;
+}
+
+.principal .formulario input[type=text].error {
+	border: 5px solid #D32F2F;
+	color: red;
+}
+
+.principal .formulario .boton {
+	background: none;
+	border: 1px solid #D32F2F;
+	color: #fff;
+	display: inline-block;
+	font-size: 16px;
+	padding: 15px;
+}
+
+.principal .formulario .boton:hover {
+	background-color: red;
+	opacity: 0.7;
+	transition: 1s;
+}
+
+/* - Tareas - */
+.tareas .lista {
+	list-style: none;
+}
+
+.tareas .lista li {
+	border-bottom: 1px solid #B6B6B6;
+}
+
+.tareas .lista li a {
+	color: #212121;
+	display: block;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+.tareas .lista li a:hover {
+	text-decoration: line-through;
+}
